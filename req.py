@@ -37,3 +37,17 @@ import json
 # r4 = requests.get(f'https://reqres.in/api/users/{id}')
 # print(r4.status_code)
 # print(r4.json())
+
+# put request
+r5 = requests.get('https://reqres.in/api/users/2')
+print(r5.json())
+
+# updating the user
+payload = {
+    "name":"Jaktap",
+    "job":"Cologne"
+}
+
+r6 = requests.put('https://reqres.in/api/users/2',data=payload)
+print(r6.status_code)
+print(r6.json())
