@@ -5,8 +5,12 @@ df = pd.DataFrame(data=file)
 # print(df.columns)
 
 
-# accenssing months in the dataframe 
-print(df['Month'][1])
+# accessing months in the dataframe 
+# print(df['Month'][1])
 
-for i in zip(df['Month'],df['Temperature']):
-    print(i)
+# for i in zip(df['Month'],df['Temperature']):
+#     print(i)
+
+
+# loc to access values 
+print(df.loc[1].iat[1]) # getting 1 row 1st column value
