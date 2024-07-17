@@ -13,4 +13,14 @@ df = pd.DataFrame(data=file)
 
 
 # loc to access values 
-print(df.loc[1].iat[1]) # getting 1 row 1st column value
+# print(df.loc[1].iat[1]) # getting 1 row 1st column value
+
+# storing the month and temperatures into list of tuples 
+values = list(zip(df.index,df['Month'],df['Temperature']))
+print(values[:5]) # first five values
+
+
+
+
+
+
