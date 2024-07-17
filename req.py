@@ -60,3 +60,10 @@ import json
 # r7 = requests.patch('https://reqres.in/api/users/2',data=payload)
 # print(r7.status_code)
 # print(r7.json())
+
+
+# delete
+
+# r8 = requests.delete('https://reqres.in/api/users/2')
+# print(r8.status_code,r8.text) # no content 
+
