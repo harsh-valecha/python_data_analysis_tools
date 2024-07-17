@@ -39,15 +39,24 @@ import json
 # print(r4.json())
 
 # put request
-r5 = requests.get('https://reqres.in/api/users/2')
-print(r5.json())
+# r5 = requests.get('https://reqres.in/api/users/2')
+# print(r5.json())
 
-# updating the user
-payload = {
-    "name":"Jaktap",
-    "job":"Cologne"
-}
+# # updating the user
+# payload = {
+#     "name":"Jaktap",
+#     "job":"Cologne"
+# }
 
-r6 = requests.put('https://reqres.in/api/users/2',data=payload)
-print(r6.status_code)
-print(r6.json())
+# r6 = requests.put('https://reqres.in/api/users/2',data=payload)
+# print(r6.status_code)
+# print(r6.json())
+
+
+# print(requests.get('https://reqres.in/api/users/2').json())
+# payload = {
+#     "job":"CA"
+# }
+# r7 = requests.patch('https://reqres.in/api/users/2',data=payload)
+# print(r7.status_code)
+# print(r7.json())
